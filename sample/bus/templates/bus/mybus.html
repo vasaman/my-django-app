@@ -1,0 +1,10 @@
+{% extends 'bus/layout.html' %}
+
+{% block body %}
+<h1>Bus no. {{ bus.id }} </h1>
+<ul>
+  <li>from {{ bus.origin }} </li>
+  <li>to {{ bus.destination }}</li>
+</ul>
+
+{% endblock  %}

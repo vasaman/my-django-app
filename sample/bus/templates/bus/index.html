@@ -1,0 +1,13 @@
+{% extends 'bus/layout.html' %}
+{% block body %}
+    <h1>Bus list</h1>
+    <ul>
+        {% for bus in buses %}
+            <li>
+                <a href="{% url 'bus' bus.id %}">
+                    bus no. {{ bus.id }}  ::  {{ bus.origin }} ==> {{ bus.destination }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock  %}
